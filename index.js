@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = process.env.PORT || 5000;
+
 const Request = require('request')
 
 
@@ -31,6 +31,8 @@ app.get('/api/rates', (req, res) => {
   res.send(data)
 })
 
+
+const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
