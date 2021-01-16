@@ -3,7 +3,6 @@ const app = express()
 const port = process.env.PORT || 5000;
 const Request = require('request')
 
-app.use(express.static('index.js'))
 
 const url = `https://api.exchangeratesapi.io/latest`
 
