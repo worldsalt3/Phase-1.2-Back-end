@@ -24,7 +24,7 @@ Request.get(url, (error, response, body) => {
 
 
 app.get('/', (req, res) => {
-  res.send('Hello World')
+  res.send(`<code>visit the endpoint(/api/rates) to GET the latest rates api</code>`)
 })
 
 app.get('/api/rates', (req, res) => {
