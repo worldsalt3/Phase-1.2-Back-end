@@ -22,7 +22,7 @@ Request.get(url, (error, response, body) => {
 
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Hello World')
 })
 
 app.get('/api/rates', (req, res) => {
