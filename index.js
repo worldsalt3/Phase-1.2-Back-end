@@ -13,7 +13,7 @@ Request.get(url, (error, response, body) => {
   data = {
     results: {
       base: JSON.parse(body).base,
-      date: JSON.parse(body).data,
+      date: JSON.parse(body).date,
       rates: JSON.parse(body).rates,
     },
   }
@@ -29,6 +29,6 @@ app.get('/api/rates', (req, res) => {
   res.send(data)
 })
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+// app.listen(port, () => {
+//   console.log(`Example app listening at http://localhost:${port}`)
+// })
